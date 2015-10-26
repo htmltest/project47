@@ -100,6 +100,15 @@ var sliderTimer     = null;
             padding: 0
         });
 
+        $('.services-item-mobile-open').click(function(e) {
+            var curLink = $(this);
+            var curText = curLink.html();
+            curLink.html(curLink.attr('rel'));
+            curLink.attr('rel', curText);
+            curLink.parent().toggleClass('open');
+            e.preventDefault();
+        });
+
     });
 
 })(jQuery);
