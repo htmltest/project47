@@ -6,10 +6,14 @@
 
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="js/fancybox-2.1.5/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/chosen-1.4.2/chosen.css" />
 
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/fancybox-2.1.5/jquery.fancybox.pack.js"></script>
         <script src="js/fancybox-2.1.5/helpers/jquery.fancybox-media.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/chosen-1.4.2/chosen.jquery.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=device-width" />
@@ -47,9 +51,23 @@
                 <div class="header-content">
                     <div class="header-office">
                         <a href="#" class="header-office-link">Москва «Очаково»</a>
+                        <div class="header-office-popup">
+                            <div>Москва «Очаково»</div>
+                            <ul>
+                                <li><a href="#">Москва «Свиблово»</a></li>
+                                <li><a href="#">Лобня</a></li>
+                                <li><a href="#">Хабаровск</a></li>
+                                <li><a href="#">Самара</a></li>
+                                <li><a href="#">Монино</a></li>
+                                <li><a href="#">Чита</a></li>
+                                <li><a href="#">Ростов-На-Дону</a></li>
+                                <li><a href="#">Селятино</a></li>
+                                <li><a href="#">Екатеринбург</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="header-address">г. Москва, Очаковское шоссе, д. 3 «А»</div>
-                    <div class="header-callback"><a href="#">Заказать звонок</a></div>
+                    <div class="header-callback"><a href="windows/callback.html">Заказать звонок</a></div>
                     <div class="header-phone">+7 (495) 442-12-50</div>
                     <div class="header-phone">+7(800) 500-14-70 </div>
                 </div>
@@ -60,7 +78,18 @@
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">Филиалы</a></li>
                         <li><a href="#">Документация</a></li>
-                        <li><a href="#">Производство <span></span></a></li>
+                        <li>
+                            <a href="#">Производство <span></span></a>
+                            <div class="nav-sub">
+                                <div><a href="#">Производство <span></span></a></div>
+                                <ul>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Клиенты</a></li>
+                                    <li><a href="#">Партнёры</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
@@ -70,14 +99,60 @@
         <!-- header mobile -->
         <div class="header-mobile">
             <div class="logo-mobile"><img src="images/logo-mobile.png" alt="" width="40" height="37" /></div>
-            <a href="#" class="menu-mobile"></a>
-            <a href="#" class="search-mobile"></a>
+            <a href="#" class="menu-mobile"><span></span></a>
+            <a href="#" class="search-mobile"><span></span></a>
             <div class="header-mobile-office">
-                <a href="#" class="header-mobile-office-link">Москва «Очаково»</a>
+                <div class="header-office">
+                    <a href="#" class="header-office-link">Москва «Очаково»</a>
+                    <div class="header-office-popup">
+                        <div>Москва «Очаково»</div>
+                        <ul>
+                            <li><a href="#">Москва «Свиблово»</a></li>
+                            <li><a href="#">Лобня</a></li>
+                            <li><a href="#">Хабаровск</a></li>
+                            <li><a href="#">Самара</a></li>
+                            <li><a href="#">Монино</a></li>
+                            <li><a href="#">Чита</a></li>
+                            <li><a href="#">Ростов-На-Дону</a></li>
+                            <li><a href="#">Селятино</a></li>
+                            <li><a href="#">Екатеринбург</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="header-mobile-office-phone">+7 (495) 442-12-50</div>
             </div>
         </div>
         <!-- header mobile END -->
+
+        <div class="search-mobile-form">
+            <form action="#" method="post">
+                <div class="search-mobile-form-input"><input type="text" name="search" value="" placeholder="Производство мебели" /></div>
+                <div class="search-mobile-form-submit"><input type="submit" value="искать" /></div>
+            </form>
+        </div>
+
+        <div class="menu-mobile-content">
+            <ul>
+                <li class="active"><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Филиалы</a></li>
+                <li><a href="#">Документация</a></li>
+                <li>
+                    <a href="#">Производство <span></span></a>
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Руководство</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
 
         <div class="breadcrumbs">
             <a href="#">Главная</a> <span></span>
@@ -146,7 +221,7 @@
 
                     <div class="links">
                         <a href="#">Сайт – <span>http://oboronmebel.ru</span></a>
-                        <a href="#"><img src="images/pdf.png" alt=" width="31" height="31" /> Скачать каталог производства</a>
+                        <a href="#"><span class="link-pdf-icon"></span> Скачать каталог производства</a>
                     </div>
 
                     <p>В соответствии с решением внеочередного общего собрания акционеров от 21.07.2014 г. открытое акционерное общество «Промышленно-эксплуатационное управление» реорганизовано путем присоединения к ОАО «1470 УМТО».</p>
@@ -174,7 +249,18 @@
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">Филиалы</a></li>
                         <li><a href="#">Документация</a></li>
-                        <li><a href="#">Производство <span></span></a></li>
+                        <li>
+                            <a href="#">Производство <span></span></a>
+                            <div class="nav-sub">
+                                <ul>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Клиенты</a></li>
+                                    <li><a href="#">Партнёры</a></li>
+                                </ul>
+                                <div><a href="#">Производство <span></span></a></div>
+                            </div>
+                        </li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
