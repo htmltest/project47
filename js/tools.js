@@ -214,9 +214,15 @@ var sliderTimer     = null;
         });
 
         $('.menu-mobile-content > ul > li > a').click(function(e) {
-            if ($(this).find('span')) {
+            if ($(this).find('span').length > 0) {
                 $(this).parent().toggleClass('open');
                 e.preventDefault();
+            }
+        });
+
+        $('.menu-mobile-content > ul > li.active').each(function() {
+            if ($(this).find('span').length > 0) {
+                $(this).addClass('open');
             }
         });
 
