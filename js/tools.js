@@ -16,6 +16,18 @@ var sliderTimer     = null;
             }
         });
 
+        $('.header-office-popup a').click(function(e){
+            var id = $(this).attr('rel');
+            $('.header-phones-inner, .header-phones-popup, .header-mobile-office-phone').html(cities[id]['p']);
+            $('.header-address-inner, .header-address-popup').html(cities[id]['a']);
+            $('.header-title').html(cities[id]['n']);
+            $('.header-office-link').html(cities[id]['n']);
+            $('.header-office.open').removeClass('open');
+            var date = new Date(new Date().getTime() + 60 * 60 * 24 * 365 * 1000);
+            document.cookie = 'SELECTED_FILLIAL=' + id + '; path=/; expires=' + date.toUTCString();
+            e.preventDefault();
+        });
+
         $('.header-office-popup div').click(function() {
             $('.header-office.open').removeClass('open');
         });

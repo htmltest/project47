@@ -49,27 +49,127 @@
             <div class="logo"><img src="images/logo.png" alt="" /></div>
             <div class="header-container">
                 <div class="header-content">
+                    <script>
+                        var cities = new Array;
+                        cities[182] = new Array;
+                        cities[182]["n"] = 'Москва «Очаково»';
+                        cities[182]["a"] = 'г.Москва, Очаковское шоссе, д. 3а';
+                        cities[182]["p"] = '<div class="header-phone">+7 (495) 442-12-50</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[183] = new Array;
+                        cities[183]["n"] = 'Москва «Свиблово»';
+                        cities[183]["a"] = 'г.Москва, ул.Искры, д.33 &quot;А&quot;';
+                        cities[183]["p"] = '<div class="header-phone">+7 (499) 186-13-04</div><div class="header-phone">+7 (800) 500-14-70</div><div class="header-phone">+7 (903) 222-77-50</div>';
+                        cities[187] = new Array;
+                        cities[187]["n"] = 'Москва «Лобня»';
+                        cities[187]["a"] = '';
+                        cities[187]["p"] = '<div class="header-phone">+7 (985) 230-03-03</div><div class="header-phone">+7 (498) 672-91-09</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[188] = new Array;
+                        cities[188]["n"] = 'Москва «Тамань»';
+                        cities[188]["a"] = '';
+                        cities[188]["p"] = '<div class="header-phone">+7 (496) 349-19-42</div><div class="header-phone">+7 (926) 086-30-62</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[194] = new Array;
+                        cities[194]["n"] = 'Москва «Гжатская»';
+                        cities[194]["a"] = '';
+                        cities[194]["p"] = '<div class="header-phone">+7 (926)357-09-33</div><div class="header-phone">+7 (495) 443-63-11</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[195] = new Array;
+                        cities[195]["n"] = 'Москва «Тушинская»';
+                        cities[195]["a"] = 'г. Москва, ул. Тушинская, д. 24';
+                        cities[195]["p"] = '<div class="header-phone">+7 (916) 695-70-94</div><div class="header-phone">+7 (495) 491-58-10</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[184] = new Array;
+                        cities[184]["n"] = 'Селятино';
+                        cities[184]["a"] = 'Московская обл., Наро-Фоминский р-он, п. Калининец, ул. Фабричная д.1 “А” (ж/д ст. Селятино)';
+                        cities[184]["p"] = '<div class="header-phone">+7 (916) 695-70-94</div><div class="header-phone">+7 (496) 342-56-50</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[186] = new Array;
+                        cities[186]["n"] = 'Наро-Фоминск';
+                        cities[186]["a"] = 'Московская обл., г. Наро-Фоминск';
+                        cities[186]["p"] = '<div class="header-phone">+7 (926) 086-34-07 </div><div class="header-phone">+7 (496) 344-41-95</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[189] = new Array;
+                        cities[189]["n"] = 'Ростов-на-Дону';
+                        cities[189]["a"] = '';
+                        cities[189]["p"] = '<div class="header-phone">+7 (928) 761-40-30</div><div class="header-phone">+7 (863) 223-22-01</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[190] = new Array;
+                        cities[190]["n"] = 'Чита';
+                        cities[190]["a"] = '';
+                        cities[190]["p"] = '<div class="header-phone">+7 (914)507-32-93</div><div class="header-phone">+7 (3022) 31-49-55</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[191] = new Array;
+                        cities[191]["n"] = 'Самара';
+                        cities[191]["a"] = '';
+                        cities[191]["p"] = '<div class="header-phone">+7 (917) 118-10-40</div><div class="header-phone">+7 (925) 701-59-80</div><div class="header-phone">+7 (846) 958-53-22</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[192] = new Array;
+                        cities[192]["n"] = 'Екатеринбург';
+                        cities[192]["a"] = '';
+                        cities[192]["p"] = '<div class="header-phone">+7 (982) 611-65-85</div><div class="header-phone">+7 (343) 322-99-25</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[193] = new Array;
+                        cities[193]["n"] = 'Хабаровск';
+                        cities[193]["a"] = '';
+                        cities[193]["p"] = '<div class="header-phone">+7 (4212) 41-88-69</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[196] = new Array;
+                        cities[196]["n"] = 'Энгельс';
+                        cities[196]["a"] = 'Саратовская область, г. Энгельс, ул. Тракторная, д.1';
+                        cities[196]["p"] = '<div class="header-phone">+7 (927) 226-31-18</div><div class="header-phone">+7 (845) 376-13-80</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[197] = new Array;
+                        cities[197]["n"] = 'Гатчина';
+                        cities[197]["a"] = 'Ленинградская область, г. Гатчина, ул. Жемчужина, д.5';
+                        cities[197]["p"] = '<div class="header-phone">+7 (813) 0712-25-25</div><div class="header-phone">+7 (813) 719-35-64</div><div class="header-phone">+7 (911) 816-75-50</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[198] = new Array;
+                        cities[198]["n"] = 'Уссурийск';
+                        cities[198]["a"] = 'Приморский край, г. Уссурийск, ул. Комсомольская, д.121';
+                        cities[198]["p"] = '<div class="header-phone">+7 (902) 521-25-19</div><div class="header-phone">+7 (423) 426-56-09</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[199] = new Array;
+                        cities[199]["n"] = 'Костерево';
+                        cities[199]["a"] = 'Владимирская область, Петушинский район, г. Костерево, ул. Заречная';
+                        cities[199]["p"] = '<div class="header-phone">+7 (903) 282-89-01</div><div class="header-phone">+7 (49243) 993-07-46</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[200] = new Array;
+                        cities[200]["n"] = 'Вязьма';
+                        cities[200]["a"] = 'Смоленская обл., г. Вязьма, ул. Песочная, 2';
+                        cities[200]["p"] = '<div class="header-phone">+7 (926) 090-92-88</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[201] = new Array;
+                        cities[201]["n"] = 'Владивосток';
+                        cities[201]["a"] = 'Приморский край, г. Владивосток, ул. Фадеева, д. 42';
+                        cities[201]["p"] = '<div class="header-phone">+7 (914) 966-14-84</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                    </script>
                     <div class="header-office">
                         <a href="#" class="header-office-link">Москва «Очаково»</a>
                         <div class="header-office-popup">
-                            <div>Москва «Очаково»</div>
+                            <div class="header-title">Москва «Очаково»</div>
                             <ul>
-                                <li><a href="#">Москва «Свиблово»</a></li>
-                                <li><a href="#">Лобня</a></li>
-                                <li><a href="#">Хабаровск</a></li>
-                                <li><a href="#">Самара</a></li>
-                                <li><a href="#">Монино</a></li>
-                                <li><a href="#">Чита</a></li>
-                                <li><a href="#">Ростов-На-Дону</a></li>
-                                <li><a href="#">Селятино</a></li>
-                                <li><a href="#">Екатеринбург</a></li>
+                                <li><a href="/index.php?setCity=182" rel="182">Москва «Очаково»</a></li>
+                                <li><a href="/index.php?setCity=183" rel="183">Москва «Свиблово»</a></li>
+                                <li><a href="/index.php?setCity=187" rel="187">Москва «Лобня»</a></li>
+                                <li><a href="/index.php?setCity=188" rel="188">Москва «Тамань»</a></li>
+                                <li><a href="/index.php?setCity=194" rel="194">Москва «Гжатская»</a></li>
+                                <li><a href="/index.php?setCity=195" rel="195">Москва «Тушинская»</a></li>
+                                <li><a href="/index.php?setCity=184" rel="184">Селятино</a></li>
+                                <li><a href="/index.php?setCity=186" rel="186">Наро-Фоминск</a></li>
+                                <li><a href="/index.php?setCity=189" rel="189">Ростов-на-Дону</a></li>
+                                <li><a href="/index.php?setCity=190" rel="190">Чита</a></li>
+                                <li><a href="/index.php?setCity=191" rel="191">Самара</a></li>
+                                <li><a href="/index.php?setCity=192" rel="192">Екатеринбург</a></li>
+                                <li><a href="/index.php?setCity=193" rel="193">Хабаровск</a></li>
+                                <li><a href="/index.php?setCity=196" rel="196">Энгельс</a></li>
+                                <li><a href="/index.php?setCity=197" rel="197">Гатчина</a></li>
+                                <li><a href="/index.php?setCity=198" rel="198">Уссурийск</a></li>
+                                <li><a href="/index.php?setCity=199" rel="199">Костерево</a></li>
+                                <li><a href="/index.php?setCity=200" rel="200">Вязьма</a></li>
+                                <li><a href="/index.php?setCity=201" rel="201">Владивосток</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="header-address">г. Москва, Очаковское шоссе, д. 3 «А»</div>
+                    <div class="header-address">
+                        <div class="header-address-inner">г. Москва, Очаковское шоссе, д. 3 «А»</div>
+                        <div class="header-address-popup">г. Москва, Очаковское шоссе, д. 3 «А»</div>
+                    </div>
                     <div class="header-callback"><a href="windows/callback.html">Заказать звонок</a></div>
-                    <div class="header-phone">+7 (495) 442-12-50</div>
-                    <div class="header-phone">+7(800) 500-14-70 </div>
+                    <div class="header-phones">
+                        <div class="header-phones-inner">
+                            <div class="header-phone">+7 (495) 442-12-50</div>
+                            <div class="header-phone">+7(800) 500-14-70 </div>
+                        </div>
+                        <div class="header-phones-popup">
+                            <div class="header-phone">+7 (495) 442-12-50</div>
+                            <div class="header-phone">+7(800) 500-14-70 </div>
+                        </div>
+                    </div>
                 </div>
 
                 <nav>
@@ -107,15 +207,25 @@
                     <div class="header-office-popup">
                         <div>Москва «Очаково»</div>
                         <ul>
-                            <li><a href="#">Москва «Свиблово»</a></li>
-                            <li><a href="#">Лобня</a></li>
-                            <li><a href="#">Хабаровск</a></li>
-                            <li><a href="#">Самара</a></li>
-                            <li><a href="#">Монино</a></li>
-                            <li><a href="#">Чита</a></li>
-                            <li><a href="#">Ростов-На-Дону</a></li>
-                            <li><a href="#">Селятино</a></li>
-                            <li><a href="#">Екатеринбург</a></li>
+                            <li><a href="/index.php?setCity=182" rel="182">Москва «Очаково»</a></li>
+                            <li><a href="/index.php?setCity=183" rel="183">Москва «Свиблово»</a></li>
+                            <li><a href="/index.php?setCity=187" rel="187">Москва «Лобня»</a></li>
+                            <li><a href="/index.php?setCity=188" rel="188">Москва «Тамань»</a></li>
+                            <li><a href="/index.php?setCity=194" rel="194">Москва «Гжатская»</a></li>
+                            <li><a href="/index.php?setCity=195" rel="195">Москва «Тушинская»</a></li>
+                            <li><a href="/index.php?setCity=184" rel="184">Селятино</a></li>
+                            <li><a href="/index.php?setCity=186" rel="186">Наро-Фоминск</a></li>
+                            <li><a href="/index.php?setCity=189" rel="189">Ростов-на-Дону</a></li>
+                            <li><a href="/index.php?setCity=190" rel="190">Чита</a></li>
+                            <li><a href="/index.php?setCity=191" rel="191">Самара</a></li>
+                            <li><a href="/index.php?setCity=192" rel="192">Екатеринбург</a></li>
+                            <li><a href="/index.php?setCity=193" rel="193">Хабаровск</a></li>
+                            <li><a href="/index.php?setCity=196" rel="196">Энгельс</a></li>
+                            <li><a href="/index.php?setCity=197" rel="197">Гатчина</a></li>
+                            <li><a href="/index.php?setCity=198" rel="198">Уссурийск</a></li>
+                            <li><a href="/index.php?setCity=199" rel="199">Костерево</a></li>
+                            <li><a href="/index.php?setCity=200" rel="200">Вязьма</a></li>
+                            <li><a href="/index.php?setCity=201" rel="201">Владивосток</a></li>
                         </ul>
                     </div>
                 </div>

@@ -84,12 +84,19 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 .header-office ul li a:hover {color:#28b2c6; background:#deeff2; border:none; padding-top:5px; text-decoration:none}
 .header-office-popup div {padding:4px 38px 6px 20px; color:#28b2c6; cursor:pointer}
 .header-office-popup div:after {content:""; display:block; width:9px; height:6px; position:absolute; right:20px; top:12px; background:url(../images/header-office.png)}
-.header-address {float:left; padding:20px 0 0 20px; color:#000; font-size:13px}
+.header-address {float:left; margin:20px 0 0 20px; color:#000; font-size:13px; position:relative}
+.header-address-inner {white-space:nowrap; max-width:220px; text-overflow:ellipsis; overflow:hidden; position:relative}
+.header-address-popup {display:none; position:absolute; left:-5px; top:-5px; white-space:nowrap; background:#fff; padding:5px; box-shadow:2px 2px 5px rgba(165, 187, 191, .75); z-index:99}
+.header-address:hover .header-address-popup {display:block}
 .header-callback {float:right; padding:17px 0 0 0}
 .header-callback a {float:left; color:#fff; font-size:12px; line-height:25px; padding:0 20px; text-transform:uppercase; background:#28b2c6}
 .header-callback a:hover {background:#00a8c1; text-decoration:none}
 .header-callback a:active {background:#00869a}
-.header-phone {float:right; font-size:13px; font-weight:bold; color:#000; padding:20px 20px 0 0}
+.header-phones {float:right; font-size:13px; font-weight:bold; color:#000; margin:20px 5px 0 0; position:relative}
+.header-phones-inner {white-space:nowrap; max-width:260px; text-overflow:ellipsis; overflow:hidden; position:relative}
+.header-phones-popup {display:none; position:absolute; left:-5px; top:-5px; white-space:nowrap; background:#fff; padding:5px 0 5px 5px; box-shadow:2px 2px 5px rgba(165, 187, 191, .75); z-index:99}
+.header-phones:hover .header-phones-popup {display:block}
+.header-phone {display:inline; margin:0 15px 0 0}
 
 nav {float:left; width:100%; padding:6px 0; background:#deeff2; text-align:center; margin:18px 0 0 0}
 nav > ul {margin:0; padding:0; list-style:none; display:inline-block; vertical-align:top; font-weight:bold; font-size:15px; line-height:28px; text-transform:uppercase}
@@ -134,6 +141,8 @@ li:hover > .nav-sub {display:block}
 .header-mobile-office {text-align:center; font-size:13px; padding:8px 0 0 0}
 .header-mobile-office .header-office {display:inline-block; vertical-align:top; float:none; margin:0; text-align:left}
 .header-mobile-office-phone {color:#000; font-size:15px; font-weight:bold; padding:1px 0 0 0}
+.header-mobile-office-phone .header-phone {margin:0; display:none}
+.header-mobile-office-phone .header-phone:first-child {display:inline}
 
 .search-mobile-form {display:none; position:fixed; z-index:999999; left:0; top:59px; width:100%; background:#28b2c6; padding:18px 20px 12px 20px; box-sizing:border-box}
 .search-mobile-form.active {display:block}
