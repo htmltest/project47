@@ -285,13 +285,13 @@ li:hover > .nav-sub {display:block}
 .main-news-name a {color:#000}
 .main-news-anonce {padding:10px 0 0 0}
 .main-news-date {color:#8baaaf; padding:10px 0 0 0}
-.main-news-all {display:none}
+.main-news-all {display:block; border:2px solid #28b2c6; width:136px; height:31px; text-align:center; color:#000; font-size:12px; line-height:31px; text-transform:uppercase; margin:33px 0 0 0}
 
 @media (max-width:1000px) {
     .main-middle {padding:50px 20px}
     .main-about {width:auto; float:none}
     .main-news {float:none; width:auto; border-top:1px solid #bde0e5; padding:40px 0 0 0}
-    .main-news-all {display:block; background:#7ed1dd; height:35px; text-align:center; text-transform:uppercase; font-size:13px; line-height:35px; color:#fff; border-radius:3px; margin:34px 0 0 0; position:relative}
+    .main-news-all {display:block; background:#7ed1dd; width:auto; border:none; height:35px; text-align:center; text-transform:uppercase; font-size:13px; line-height:35px; color:#fff; border-radius:3px; margin:34px 0 0 0; position:relative}
     .main-news-all:after {content:""; display:block; width:8px; height:13px; background:url(../images/main-news-all.png); position:absolute; right:12px; top:11px}
 }
 
