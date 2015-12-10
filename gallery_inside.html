@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>УМТО 1470</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/fancybox-2.1.5/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/chosen-1.4.2/chosen.css" />
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/fancybox-2.1.5/jquery.fancybox.pack.js"></script>
+        <script src="js/fancybox-2.1.5/helpers/jquery.fancybox-media.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/chosen-1.4.2/chosen.jquery.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- top -->
+        <div class="top">
+            <div class="top-inner">
+                <div class="top-menu">
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Закупочная деятельность</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Спецпредложения</a></li>
+                    </ul>
+                </div>
+
+                <div class="top-search">
+                    <form action="#" method="post">
+                        <div class="top-search-input"><input type="text" name="search" value="" placeholder="поиск" /></div>
+                        <div class="top-search-submit"><input type="submit" value="" /></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- top END -->
+
+        <header>
+            <div class="logo"><img src="images/logo.png" alt="" /></div>
+            <div class="header-container">
+                <div class="header-content">
+                    <script>
+                        var cities = new Array;
+                        cities[182] = new Array;
+                        cities[182]["n"] = 'Москва «Очаково»';
+                        cities[182]["a"] = 'г.Москва, Очаковское шоссе, д. 3а';
+                        cities[182]["p"] = '<div class="header-phone">+7 (495) 442-12-50</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[183] = new Array;
+                        cities[183]["n"] = 'Москва «Свиблово»';
+                        cities[183]["a"] = 'г.Москва, ул.Искры, д.33 &quot;А&quot;';
+                        cities[183]["p"] = '<div class="header-phone">+7 (499) 186-13-04</div><div class="header-phone">+7 (800) 500-14-70</div><div class="header-phone">+7 (903) 222-77-50</div>';
+                        cities[187] = new Array;
+                        cities[187]["n"] = 'Москва «Лобня»';
+                        cities[187]["a"] = '';
+                        cities[187]["p"] = '<div class="header-phone">+7 (985) 230-03-03</div><div class="header-phone">+7 (498) 672-91-09</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[188] = new Array;
+                        cities[188]["n"] = 'Москва «Тамань»';
+                        cities[188]["a"] = '';
+                        cities[188]["p"] = '<div class="header-phone">+7 (496) 349-19-42</div><div class="header-phone">+7 (926) 086-30-62</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[194] = new Array;
+                        cities[194]["n"] = 'Москва «Гжатская»';
+                        cities[194]["a"] = '';
+                        cities[194]["p"] = '<div class="header-phone">+7 (926)357-09-33</div><div class="header-phone">+7 (495) 443-63-11</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[195] = new Array;
+                        cities[195]["n"] = 'Москва «Тушинская»';
+                        cities[195]["a"] = 'г. Москва, ул. Тушинская, д. 24';
+                        cities[195]["p"] = '<div class="header-phone">+7 (916) 695-70-94</div><div class="header-phone">+7 (495) 491-58-10</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[184] = new Array;
+                        cities[184]["n"] = 'Селятино';
+                        cities[184]["a"] = 'Московская обл., Наро-Фоминский р-он, п. Калининец, ул. Фабричная д.1 “А” (ж/д ст. Селятино)';
+                        cities[184]["p"] = '<div class="header-phone">+7 (916) 695-70-94</div><div class="header-phone">+7 (496) 342-56-50</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[186] = new Array;
+                        cities[186]["n"] = 'Наро-Фоминск';
+                        cities[186]["a"] = 'Московская обл., г. Наро-Фоминск';
+                        cities[186]["p"] = '<div class="header-phone">+7 (926) 086-34-07 </div><div class="header-phone">+7 (496) 344-41-95</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[189] = new Array;
+                        cities[189]["n"] = 'Ростов-на-Дону';
+                        cities[189]["a"] = '';
+                        cities[189]["p"] = '<div class="header-phone">+7 (928) 761-40-30</div><div class="header-phone">+7 (863) 223-22-01</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[190] = new Array;
+                        cities[190]["n"] = 'Чита';
+                        cities[190]["a"] = '';
+                        cities[190]["p"] = '<div class="header-phone">+7 (914)507-32-93</div><div class="header-phone">+7 (3022) 31-49-55</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[191] = new Array;
+                        cities[191]["n"] = 'Самара';
+                        cities[191]["a"] = '';
+                        cities[191]["p"] = '<div class="header-phone">+7 (917) 118-10-40</div><div class="header-phone">+7 (925) 701-59-80</div><div class="header-phone">+7 (846) 958-53-22</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[192] = new Array;
+                        cities[192]["n"] = 'Екатеринбург';
+                        cities[192]["a"] = '';
+                        cities[192]["p"] = '<div class="header-phone">+7 (982) 611-65-85</div><div class="header-phone">+7 (343) 322-99-25</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[193] = new Array;
+                        cities[193]["n"] = 'Хабаровск';
+                        cities[193]["a"] = '';
+                        cities[193]["p"] = '<div class="header-phone">+7 (4212) 41-88-69</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[196] = new Array;
+                        cities[196]["n"] = 'Энгельс';
+                        cities[196]["a"] = 'Саратовская область, г. Энгельс, ул. Тракторная, д.1';
+                        cities[196]["p"] = '<div class="header-phone">+7 (927) 226-31-18</div><div class="header-phone">+7 (845) 376-13-80</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[197] = new Array;
+                        cities[197]["n"] = 'Гатчина';
+                        cities[197]["a"] = 'Ленинградская область, г. Гатчина, ул. Жемчужина, д.5';
+                        cities[197]["p"] = '<div class="header-phone">+7 (813) 0712-25-25</div><div class="header-phone">+7 (813) 719-35-64</div><div class="header-phone">+7 (911) 816-75-50</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[198] = new Array;
+                        cities[198]["n"] = 'Уссурийск';
+                        cities[198]["a"] = 'Приморский край, г. Уссурийск, ул. Комсомольская, д.121';
+                        cities[198]["p"] = '<div class="header-phone">+7 (902) 521-25-19</div><div class="header-phone">+7 (423) 426-56-09</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[199] = new Array;
+                        cities[199]["n"] = 'Костерево';
+                        cities[199]["a"] = 'Владимирская область, Петушинский район, г. Костерево, ул. Заречная';
+                        cities[199]["p"] = '<div class="header-phone">+7 (903) 282-89-01</div><div class="header-phone">+7 (49243) 993-07-46</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[200] = new Array;
+                        cities[200]["n"] = 'Вязьма';
+                        cities[200]["a"] = 'Смоленская обл., г. Вязьма, ул. Песочная, 2';
+                        cities[200]["p"] = '<div class="header-phone">+7 (926) 090-92-88</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                        cities[201] = new Array;
+                        cities[201]["n"] = 'Владивосток';
+                        cities[201]["a"] = 'Приморский край, г. Владивосток, ул. Фадеева, д. 42';
+                        cities[201]["p"] = '<div class="header-phone">+7 (914) 966-14-84</div><div class="header-phone">+7 (800) 500-14-70</div>';
+                    </script>
+                    <div class="header-office">
+                        <a href="#" class="header-office-link">Москва «Очаково»</a>
+                        <div class="header-office-popup">
+                            <div class="header-title">Москва «Очаково»</div>
+                            <ul>
+                                <li><a href="/index.php?setCity=182" rel="182">Москва «Очаково»</a></li>
+                                <li><a href="/index.php?setCity=183" rel="183">Москва «Свиблово»</a></li>
+                                <li><a href="/index.php?setCity=187" rel="187">Москва «Лобня»</a></li>
+                                <li><a href="/index.php?setCity=188" rel="188">Москва «Тамань»</a></li>
+                                <li><a href="/index.php?setCity=194" rel="194">Москва «Гжатская»</a></li>
+                                <li><a href="/index.php?setCity=195" rel="195">Москва «Тушинская»</a></li>
+                                <li><a href="/index.php?setCity=184" rel="184">Селятино</a></li>
+                                <li><a href="/index.php?setCity=186" rel="186">Наро-Фоминск</a></li>
+                                <li><a href="/index.php?setCity=189" rel="189">Ростов-на-Дону</a></li>
+                                <li><a href="/index.php?setCity=190" rel="190">Чита</a></li>
+                                <li><a href="/index.php?setCity=191" rel="191">Самара</a></li>
+                                <li><a href="/index.php?setCity=192" rel="192">Екатеринбург</a></li>
+                                <li><a href="/index.php?setCity=193" rel="193">Хабаровск</a></li>
+                                <li><a href="/index.php?setCity=196" rel="196">Энгельс</a></li>
+                                <li><a href="/index.php?setCity=197" rel="197">Гатчина</a></li>
+                                <li><a href="/index.php?setCity=198" rel="198">Уссурийск</a></li>
+                                <li><a href="/index.php?setCity=199" rel="199">Костерево</a></li>
+                                <li><a href="/index.php?setCity=200" rel="200">Вязьма</a></li>
+                                <li><a href="/index.php?setCity=201" rel="201">Владивосток</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-address">
+                        <div class="header-address-inner">г. Москва, Очаковское шоссе, д. 3 «А»</div>
+                        <div class="header-address-popup">г. Москва, Очаковское шоссе, д. 3 «А»</div>
+                    </div>
+                    <div class="header-callback"><a href="windows/callback.html">Заказать звонок</a></div>
+                    <div class="header-phones">
+                        <div class="header-phones-inner">
+                            <div class="header-phone">+7 (495) 442-12-50</div>
+                            <div class="header-phone">+7(800) 500-14-70 </div>
+                        </div>
+                        <div class="header-phones-popup">
+                            <div class="header-phone">+7 (495) 442-12-50</div>
+                            <div class="header-phone">+7(800) 500-14-70 </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Филиалы</a></li>
+                        <li><a href="#">Документация</a></li>
+                        <li>
+                            <a href="#">Производство <span></span></a>
+                            <div class="nav-sub">
+                                <div><a href="#">Производство <span></span></a></div>
+                                <ul>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Клиенты</a></li>
+                                    <li><a href="#">Партнёры</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- header mobile -->
+        <div class="header-mobile">
+            <div class="logo-mobile"><img src="images/logo-mobile.png" alt="" width="40" height="37" /></div>
+            <a href="#" class="menu-mobile"><span></span></a>
+            <a href="#" class="search-mobile"><span></span></a>
+            <div class="header-mobile-office">
+                <div class="header-office">
+                    <a href="#" class="header-office-link">Москва «Очаково»</a>
+                    <div class="header-office-popup">
+                        <div>Москва «Очаково»</div>
+                        <ul>
+                            <li><a href="/index.php?setCity=182" rel="182">Москва «Очаково»</a></li>
+                            <li><a href="/index.php?setCity=183" rel="183">Москва «Свиблово»</a></li>
+                            <li><a href="/index.php?setCity=187" rel="187">Москва «Лобня»</a></li>
+                            <li><a href="/index.php?setCity=188" rel="188">Москва «Тамань»</a></li>
+                            <li><a href="/index.php?setCity=194" rel="194">Москва «Гжатская»</a></li>
+                            <li><a href="/index.php?setCity=195" rel="195">Москва «Тушинская»</a></li>
+                            <li><a href="/index.php?setCity=184" rel="184">Селятино</a></li>
+                            <li><a href="/index.php?setCity=186" rel="186">Наро-Фоминск</a></li>
+                            <li><a href="/index.php?setCity=189" rel="189">Ростов-на-Дону</a></li>
+                            <li><a href="/index.php?setCity=190" rel="190">Чита</a></li>
+                            <li><a href="/index.php?setCity=191" rel="191">Самара</a></li>
+                            <li><a href="/index.php?setCity=192" rel="192">Екатеринбург</a></li>
+                            <li><a href="/index.php?setCity=193" rel="193">Хабаровск</a></li>
+                            <li><a href="/index.php?setCity=196" rel="196">Энгельс</a></li>
+                            <li><a href="/index.php?setCity=197" rel="197">Гатчина</a></li>
+                            <li><a href="/index.php?setCity=198" rel="198">Уссурийск</a></li>
+                            <li><a href="/index.php?setCity=199" rel="199">Костерево</a></li>
+                            <li><a href="/index.php?setCity=200" rel="200">Вязьма</a></li>
+                            <li><a href="/index.php?setCity=201" rel="201">Владивосток</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-mobile-office-phone">+7 (495) 442-12-50</div>
+            </div>
+        </div>
+        <!-- header mobile END -->
+
+        <div class="search-mobile-form">
+            <form action="#" method="post">
+                <div class="search-mobile-form-input"><input type="text" name="search" value="" placeholder="Производство мебели" /></div>
+                <div class="search-mobile-form-submit"><input type="submit" value="искать" /></div>
+            </form>
+        </div>
+
+        <div class="menu-mobile-content">
+            <ul>
+                <li class="active"><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Филиалы</a></li>
+                <li><a href="#">Документация</a></li>
+                <li>
+                    <a href="#">Производство <span></span></a>
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Руководство</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="breadcrumbs">
+            <a href="#">Главная</a> <span></span>
+            <a href="#">О компании</a> <span></span>
+            Фотогалерея
+        </div>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- side -->
+            <div class="side">
+                <div class="side-menu">
+                    <a href="#" class="side-menu-link"></a>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Руководство</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Реквизиты</a></li>
+                        <li class="active"><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- side END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="content">
+
+                    <h1>Производственная база МТС «Очаково»</h1>
+
+                    <p>Общая численность рабочих и служащих – 200 человек. Продукция и инвентарь, включенные в приказы №120 от 30 апреля 2004 г. «О порядке обеспечения мебелью и инвентарем соединений, воинских частей и организаций вооруженных сил Российской федерации» и приказ №409 от 20 сентября 2007 г. разработана при участии ПБ «27ДОЗ» Совместно с 26 ЦНИИ была также разработана и поставлена сейсмоударопрочная мебель на спецобъекты страны. Экстренно была разработана конструкторским бюро предприятия, изготовлена и своевременно поставлена полевая мебель на металлокаркасах в подразделения МО РФ в Афганистан. Неоднократно выполнялась срочная поставка мебели для «горячих» точек Кавказа во вновь созданные подразделения МО РФ.</p>
+                    <p>Производственная база «27ДОЗ» в 2011 г. изготовила и оснастила прихожими и кухнями 550 квартир по программе контрактного жилья для военнослужащих, которые были одобрены президентом страны.</p>
+                    <p>Работа предприятия отмечена золотой медалью Девятой всероссийской выставки «Лучший отечественный продукт 2009 г. Вооруженным силам России».</p>
+
+                    <!-- gallery -->
+                    <div class="gallery gallery-tours">
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-01-max.jpg" rel="files/gallery-01-preview.jpg"><img src="files/gallery-01.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Фенологические наблюдения за растениями</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-02-max.jpg" rel="files/gallery-02-preview.jpg"><img src="files/gallery-02.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Водохранилище существенно перевозит вечнозеленый кустарник</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-03-max.jpg" rel="files/gallery-03-preview.jpg"><img src="files/gallery-03.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Денежная единица выбирает различный кедровый стланик</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-04-max.jpg" rel="files/gallery-04-preview.jpg"><img src="files/gallery-04.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Болгария, несмотря на то, что есть много бунгало для проживания, абсурдно поднимает широкий особый вид куниц</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-05-max.jpg" rel="files/gallery-05-preview.jpg"><img src="files/gallery-05.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Фенологические наблюдения за растениями</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-06-max.jpg" rel="files/gallery-06-preview.jpg"><img src="files/gallery-06.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Водохранилище существенно перевозит вечнозеленый кустарник</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-07-max.jpg" rel="files/gallery-07-preview.jpg"><img src="files/gallery-07.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Денежная единица выбирает различный кедровый стланик</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-08-max.jpg" rel="files/gallery-08-preview.jpg"><img src="files/gallery-08.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Болгария, несмотря на то, что есть много бунгало для проживания, абсурдно поднимает широкий особый вид куниц</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-09-max.jpg" rel="files/gallery-09-preview.jpg"><img src="files/gallery-09.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Фенологические наблюдения за растениями</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-10-max.jpg" rel="files/gallery-10-preview.jpg"><img src="files/gallery-10.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Водохранилище существенно перевозит вечнозеленый кустарник</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-11-max.jpg" rel="files/gallery-11-preview.jpg"><img src="files/gallery-11.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Денежная единица выбирает различный кедровый стланик</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-12-max.jpg" rel="files/gallery-12-preview.jpg"><img src="files/gallery-12.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Болгария, несмотря на то, что есть много бунгало для проживания, абсурдно поднимает широкий особый вид куниц</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-13-max.jpg" rel="files/gallery-13-preview.jpg"><img src="files/gallery-13.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Фенологические наблюдения за растениями</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-14-max.jpg" rel="files/gallery-14-preview.jpg"><img src="files/gallery-14.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Водохранилище существенно перевозит вечнозеленый кустарник</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-15-max.jpg" rel="files/gallery-15-preview.jpg"><img src="files/gallery-15.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Денежная единица выбирает различный кедровый стланик</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-16-max.jpg" rel="files/gallery-16-preview.jpg"><img src="files/gallery-16.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Болгария, несмотря на то, что есть много бунгало для проживания, абсурдно поднимает широкий особый вид куниц</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-item-photo"><div><a href="files/gallery-17-max.jpg" rel="files/gallery-17-preview.jpg"><img src="files/gallery-17.jpg" alt="" /><span></span></a></div></div>
+                            <div class="gallery-item-name">Фенологические наблюдения за растениями</div>
+                        </div>
+                    </div>
+                    <!-- gallery END -->
+
+                    <div class="links gallery-back">
+                        <a href="#">Вернуться в галерею</a>
+                    </div>
+
+                    <!-- item gallery -->
+                    <div class="item-gallery">
+                        <div class="item-gallery-container">
+                            <div class="item-gallery-text">
+                                <div class="item-gallery-group"><span></span></div>
+                                <div class="item-gallery-title"></div>
+                            </div>
+                            <div class="item-gallery-load"><img src="images/blank.gif" alt="" /></div>
+                            <div class="item-gallery-big">
+                                <strong>
+                                    <img src="images/blank.gif" alt="" />
+                                    <a href="#" class="item-gallery-prev"><span></span></a>
+                                    <a href="#" class="item-gallery-next"><span></span></a>
+                                    <a href="#" class="item-gallery-close"></a>
+                                </strong>
+                                <div class="item-gallery-loading"></div>
+                            </div>
+                            <div class="item-gallery-content">
+                                <div class="item-gallery-list"></div>
+                                <a href="#" class="item-gallery-list-prev"><span></span></a>
+                                <a href="#" class="item-gallery-list-next"><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item gallery END -->
+
+                </div>
+            </div>
+            <!-- container END -->
+
+        </div>
+        <!-- wrapper -->
+
+        <!-- bottom -->
+        <div class="bottom">
+            <div class="bottom-inner">
+                <div class="bottom-logo"><img src="images/bottom-logo.png" alt="" /></div>
+
+                <div class="bottom-menu">
+                    <ul>
+                        <li class="active"><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Филиалы</a></li>
+                        <li><a href="#">Документация</a></li>
+                        <li>
+                            <a href="#">Производство <span></span></a>
+                            <div class="nav-sub">
+                                <ul>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Клиенты</a></li>
+                                    <li><a href="#">Партнёры</a></li>
+                                </ul>
+                                <div><a href="#">Производство <span></span></a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- bottom END -->
+
+        <footer>
+            <div class="footer-inner">
+                <div class="copyrights"><img src="images/bottom-logo.png" alt="" /> © 2014 ОАО «1470 УМТО»</div>
+                <div class="footer-contacts">
+                    <div class="footer-title">Центральный офис</div>
+                    <div class="footer-contacts-content">
+                        <p>Телефон: +7 (495) 442-12-50</p>
+                        <p>Адрес: Россия, 119530, г.Москва, Очаковское шоссе, д.3А</p>
+                        <p>Эл. почта: <a href="#">oao1470umto@yandex.ru</a></p>
+                    </div>
+                </div>
+                <div class="footer-partner">
+                    <div class="footer-title">Наш главный партнер</div>
+                    <div class="footer-partner-logo"><a href="#"><img src="images/footer-partner.png" alt="" width="82" height="59" /></a></div>
+                    <div class="footer-partner-name"><a href="#">ОАО «Оборонстрой»</a></div>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Сообщить об ошибке</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

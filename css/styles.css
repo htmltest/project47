@@ -572,3 +572,83 @@ footer a {color:#338c99}
 .window-callback form {margin-bottom:0}
 .window-callback .form-ctrl {margin:44px 0 0 0}
 .window-callback .form-label {padding:0; vertical-align:middle; line-height:15px; width:200px}
+
+.tours {font-size:0; line-height:0; letter-spacing:-1px; margin:0 -10px}
+.tour {display:inline-block; vertical-align:top; width:33.33%; box-sizing:border-box; padding:20px 10px 0 10px}
+.tour a {color:#000; background:#eef7f8; display:block}
+.tour-photo img {width:100%}
+.tour-name {font-size:15px; line-height:20px; font-weight:bold; text-transform:uppercase; letter-spacing:0; padding:19px 20px 21px 20px; min-height:60px}
+
+@media (max-width:768px) {
+    .tour {width:50%}
+}
+
+@media (max-width:480px) {
+    .tour {width:100%}
+}
+
+.gallery-tours {margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
+.gallery-item {display:inline-block; vertical-align:top; width:33.33%; box-sizing:border-box; padding:20px 10px 0 10px}
+.gallery-item-photo img {width:100%}
+.gallery-item-name {font-size:15px; line-height:20px; letter-spacing:0; text-align:center; padding:20px}
+
+@media (max-width:768px) {
+    .gallery-item {width:50%}
+}
+
+@media (max-width:480px) {
+    .gallery-item {width:100%}
+}
+
+.item-gallery {position:fixed; left:-9999px; top:0; width:100%; height:100%; z-index:99997; overflow:auto; background:rgba(0, 0, 0, .95)}
+.item-gallery-open {left:0}
+.item-gallery-container {position:relative; width:940px; margin:0 auto}
+.item-gallery-group {font-weight:bold; text-transform:uppercase; text-align:center; color:#28b2c6; padding:50px 0 0 0}
+.item-gallery-title {text-align:center; color:#fff; padding:2px 0 23px 0}
+.item-gallery-big {text-align:center; font-size:0; line-height:0; position:relative}
+.item-gallery-big strong {visibility:hidden; position:relative; display:inline-block; vertical-align:middle}
+.item-gallery-big strong img {vertical-align:top}
+.item-gallery-prev,
+.item-gallery-next {display:block; width:118px; height:100%; position:absolute; top:0; background:rgba(0, 0, 0, .5); opacity:0}
+.item-gallery-prev:hover,
+.item-gallery-next:hover {opacity:1}
+.item-gallery-prev span,
+.item-gallery-next span {display:block; width:39px; height:75px; position:absolute; left:50%; top:50%; margin:-38px 0 0 -20px; background:url(../images/item-gallery-arrows.png)}
+.item-gallery-prev {left:0}
+.item-gallery-next {right:0}
+.item-gallery-next span {background-position:-39px top}
+.item-gallery-close {display:block; position:absolute; right:-19px; top:-19px; width:39px; height:39px; background:#28b2c6 url(../images/item-gallery-close.png) no-repeat center; border-radius:20px}
+.item-gallery-close:hover {background-color:#00a8c1}
+.item-gallery-close:active {background-color:#00869a}
+.item-gallery-big img {vertical-align:middle; position:relative}
+.item-gallery-content {position:relative}
+.item-gallery-list {width:800px; line-height:0; position:relative; overflow:hidden; margin:0 auto}
+.item-gallery-list ul {position:relative; margin:0; padding:20px 0; list-style:none; width:9999px}
+.item-gallery-list ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.item-gallery-list ul li {float:left; margin:0 4px; padding:6px; position:relative}
+.item-gallery-list ul li:before {display:none}
+.item-gallery-list ul li.active {padding:0; border:6px solid #28b2c6}
+.item-gallery-list ul li img {opacity:.5}
+.item-gallery-list ul li a:hover img,
+.item-gallery-list ul li.active img {opacity:1}
+.item-gallery-list-prev,
+.item-gallery-list-next {position:absolute; top:50%; margin-top:-30px; display:block; width:60px; height:60px; background:#28b2c6; border-radius:30px}
+.item-gallery-list-prev {left:0}
+.item-gallery-list-next {right:0}
+.item-gallery-list-prev:hover,
+.item-gallery-list-next:hover {background:#00a8c1}
+.item-gallery-list-prev:active,
+.item-gallery-list-next:active {background:#00869a}
+.item-gallery-list-prev span,
+.item-gallery-list-next span {display:block; width:11px; height:20px; position:absolute; left:50%; top:50%; margin:-10px 0 0 -6px; background:url(../images/item-gallery-list-arrows.png)}
+.item-gallery-list-next span {background-position:-11px top}
+.item-gallery-loading {position:absolute; left:-15px; top:-15px; padding:15px; width:100%; height:100%; background:rgba(0, 0, 0, .2) url(../images/gallery-loading.gif) no-repeat center}
+.item-gallery-load {position:absolute; left:-9999px; top:-9999px; visibility:hidden}
+
+.gallery+.gallery-back {margin:17px 0 0 0}
+.gallery-back a {width:242px; border-radius:0; float:none; display:block; margin:0 auto; text-align:center; padding:0; color:#28b2c6}
+
+@media (max-width:940px) {
+    .item-gallery-container {width:728px}
+    .item-gallery-list {width:480px}
+}
