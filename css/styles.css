@@ -603,7 +603,7 @@ footer a {color:#338c99}
 .item-gallery {position:fixed; left:-9999px; top:0; width:100%; height:100%; z-index:99997; overflow:auto; background:rgba(0, 0, 0, .95)}
 .item-gallery-open {left:0}
 .item-gallery-container {position:relative; width:940px; margin:0 auto}
-.item-gallery-group {font-weight:bold; text-transform:uppercase; text-align:center; color:#28b2c6; padding:50px 0 0 0}
+.item-gallery-group {font-weight:bold; text-transform:uppercase; text-align:center; color:#28b2c6; padding:20px 0 0 0}
 .item-gallery-title {text-align:center; color:#fff; padding:2px 0 23px 0}
 .item-gallery-big {text-align:center; font-size:0; line-height:0; position:relative}
 .item-gallery-big strong {visibility:hidden; position:relative; display:inline-block; vertical-align:middle}
