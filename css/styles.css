@@ -102,24 +102,26 @@ nav {float:left; width:100%; padding:6px 0; background:#deeff2; text-align:cente
 nav > ul {margin:0; padding:0; list-style:none; display:inline-block; vertical-align:top; font-weight:bold; font-size:15px; line-height:28px; text-transform:uppercase}
 nav > ul > li {float:left; position:relative; margin:0; padding:0}
 nav ul li:before {display:none}
-nav > ul > li > a {float:left; padding:0 18px; color:#000}
+nav > ul > li > a {float:left; padding:0 12px; color:#000}
 nav > ul > li > a > span {display:inline-block; vertical-align:middle; width:9px; height:6px; background:url(../images/nav.png); margin:-2px 0 0 5px}
 nav > ul > li > a:hover {text-decoration:none}
 nav > ul > li:hover > a {color:#28b2c6}
 nav > ul > li.active > a {background:#28b2c6; color:#fff}
 nav > ul > li.active > a > span {background-position:left -6px}
-.nav-sub {display:none; position:absolute; left:0; top:0; background:#fff; box-shadow:2px 2px 5px rgba(165, 187, 191, .75); white-space:nowrap; text-align:left; font-weight:normal; z-index:999}
-.bottom .nav-sub {top:auto; bottom:0}
+.nav-sub {display:none; position:absolute; left:0; top:100%; min-width:100%; background:#fff; box-shadow:2px 2px 5px rgba(165, 187, 191, .75); white-space:nowrap; text-align:left; font-weight:normal; z-index:999}
+.bottom .nav-sub {top:auto; bottom:100%}
 li:hover > .nav-sub {display:block}
-.nav-sub div a {display:block; padding:0 18px; color:#000; font-weight:bold}
+.nav-sub div {position:absolute; left:0; top:-28px; background:#fff; box-shadow:2px 2px 5px rgba(165, 187, 191, .75)}
+.nav-sub div a {display:block; padding:0 12px; color:#000; font-weight:bold}
+.bottom .nav-sub div {top:auto; bottom:-28px}
 .bottom .nav-sub div a {padding:0 10px}
 .nav-sub div a span {display:inline-block; vertical-align:middle; width:9px; height:6px; background:url(../images/nav.png); margin:-2px 0 0 5px}
 .bottom .nav-sub div a span {background:url(../images/bottom-menu.png)}
 .nav-sub div a:hover {text-decoration:none}
-.nav-sub ul {margin:0; padding:0; list-style:none}
+.nav-sub ul {margin:0; padding:0; list-style:none; position:relative; background:#fff}
 .nav-sub ul li {margin:0; padding:0}
 .nav-sub ul li:before {display:none}
-.nav-sub ul li a {display:block; padding:0 18px; border-top:1px solid #e5e5e5; color:#222}
+.nav-sub ul li a {display:block; padding:0 12px; border-top:1px solid #e5e5e5; color:#222}
 .bottom .nav-sub ul li a {border-top:none; border-bottom:1px solid #e5e5e5}
 .bottom .nav-sub ul li a {padding:0 10px}
 .nav-sub ul li a:hover {color:#28b2c6; text-decoration:none}
