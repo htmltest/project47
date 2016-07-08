@@ -218,6 +218,7 @@ var sliderTimer     = null;
 
         $('.menu-mobile').click(function(e) {
             $(this).toggleClass('active');
+            $('body').toggleClass('menu-active');
             $('.menu-mobile-content').toggleClass('active');
 
             $('.search-mobile, .search-mobile-form, .side').removeClass('active');
