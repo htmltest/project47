@@ -150,6 +150,14 @@ var sliderTimer     = null;
                           curField.find('label.error').remove();
                       }
                   });
+                  $('.form-checkbox').each(function() {
+                      var curField = $(this);
+                      if (curField.find('input.error').length > 0) {
+                          curField.addClass('error');
+                      } else {
+                          curField.removeClass('error');
+                      }
+                  });
               }
             });
         });
@@ -187,6 +195,24 @@ var sliderTimer     = null;
 
                 $('.window input.maskPhone').mask('+7 (999) 999-99-99');
                 $('.window form').validate({
+                      invalidHandler: function(form, validatorcalc) {
+                          validatorcalc.showErrors();
+                          $('.form-file').each(function() {
+                              var curField = $(this);
+                              if (curField.find('label.error').length > 0) {
+                                  curField.after(curField.find('label.error').clone());
+                                  curField.find('label.error').remove();
+                              }
+                          });
+                          $('.form-checkbox').each(function() {
+                              var curField = $(this);
+                              if (curField.find('input.error').length > 0) {
+                                  curField.addClass('error');
+                              } else {
+                                  curField.removeClass('error');
+                              }
+                          });
+                      },
                     submitHandler: function(form) {
                         $.ajax({
                             type: 'POST',
